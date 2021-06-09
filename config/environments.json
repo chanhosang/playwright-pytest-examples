@@ -1,0 +1,19 @@
+{
+    "environments": [
+		{
+			"name": "uitestingplayground",
+			"url": "http://www.uitestingplayground.com",
+			"desc": "Pytest for different types of Web Elements"
+		},
+		{
+			"name": "bing",
+			"url": "https://bing.com",
+			"desc": "Pytest using Page Object Model"
+		},
+		{
+			"name": "duckduckgo",
+			"url": "https://www.duckduckgo.com",
+			"desc": "Pytest-BDD"
+		}
+	]
+}
