@@ -101,8 +101,13 @@ def password(request):
 
 @pytest.fixture(scope="session")
 def browser_context_args(browser_context_args):
+    """
+    To override the browser context
+    https://playwright.dev/python/docs/api/class-browser#browser-new-context
+    """
     return {
         **browser_context_args,
+        # "record_video_dir": "videos"
         "viewport": {
             "width": 1920,
             "height": 1080,
