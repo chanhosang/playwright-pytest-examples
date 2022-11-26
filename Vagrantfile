@@ -17,7 +17,7 @@ SCRIPT
 Vagrant.configure("2") do |config|
     # https://app.vagrantup.com/peru/boxes/ubuntu-20.04-desktop-amd64
     config.vm.box = "peru/ubuntu-20.04-desktop-amd64"
-    config.vm.box_version = "20210601.01"
+    config.vm.box_version = "20221106.01"
 
     # We don't want to generate new ssh keys because of bug in 1.8.5 Vagrant
     config.ssh.insert_key = false	
