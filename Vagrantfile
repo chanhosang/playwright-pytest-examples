@@ -17,7 +17,14 @@ SCRIPT
 Vagrant.configure("2") do |config|
     # https://app.vagrantup.com/peru/boxes/ubuntu-20.04-desktop-amd64
     config.vm.box = "peru/ubuntu-20.04-desktop-amd64"
-    config.vm.box_version = "20221106.01"
+    config.vm.box_version = "20230101.01"
+	
+	config.vm.provider "virtualbox" do |v|
+	  # To start the guest machine in headless mode by default
+      # due to some intermittent compatibility issue when starting in GUI mode on Windows 11 Pro
+      v.gui = false 
+	end
+
 
     # We don't want to generate new ssh keys because of bug in 1.8.5 Vagrant
     config.ssh.insert_key = false	
